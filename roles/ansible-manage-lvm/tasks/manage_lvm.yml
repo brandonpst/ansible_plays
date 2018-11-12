@@ -37,7 +37,6 @@
     - "{{ lvm_groups }}"
     - lvnames
   when: >
-        lvm['changed'] and
         item[1]['filesystem'] is defined and
         item[1]['filesystem'] == "swap"
   tags: reswap
