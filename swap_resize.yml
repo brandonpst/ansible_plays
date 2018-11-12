@@ -1,5 +1,5 @@
 ---
-- hosts:  _managed_ecom_web_ecom_web
+- hosts:  _managed_os_lx
   vars:
     lvm_groups:
       - vgname: vg00
