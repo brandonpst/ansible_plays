@@ -16,5 +16,4 @@
     pri_domain_name: 'autozone.com'
   roles:
     - role: ansible-manage-lvm
-  tasks:
-    - manage_lvm | resizing swap
+  tags: reswap
