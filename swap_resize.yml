@@ -8,7 +8,7 @@
         lvnames:
           - lvname: swap
             size: 5g
-            create: true
+            create: false
             filesystem: swap
             mount: false
             mntp: 
