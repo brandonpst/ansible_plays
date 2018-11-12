@@ -1,7 +1,7 @@
 ---
 # defaults file for ansible-manage-lvm
 lvm_groups: []
-  # - vgname: ubuntu-vg
+  # - vgname: vg00
   #   disks:
   #     - /dev/sda5
   #     - /dev/sdc
@@ -10,7 +10,7 @@ lvm_groups: []
   #   # true or false
   #   create: true
   #   lvnames:
-  #     - lvname: swap_1
+  #     - lvname: swap
   #       # Define size of lvol
   #       # 100%FREE, 10g, 1024 (megabytes by default)
   #       size: 5g
