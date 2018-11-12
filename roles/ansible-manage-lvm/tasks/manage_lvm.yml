@@ -106,7 +106,8 @@
         lvm['changed'] and
         item[1]['filesystem'] is defined and
         item[1]['filesystem'] == "swap"
-
+  tags: reswap
+  
 - name: manage_lvm | resizing btrfs
   shell: "btrfs filesystem resize max {{ item[1]['mntp'] }}"
   become: true
