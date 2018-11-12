@@ -4,13 +4,13 @@
     lvm_groups:
       - vgname: vg00
         disks:
-          create: false
+          create: true
         lvnames:
           - lvname: swap
             size: 5g
             create: true
             filesystem: swap
-            mount: false
+            mount: true
             mntp: 
     manage_lvm: true
     pri_domain_name: 'autozone.com'
