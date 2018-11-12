@@ -97,7 +97,7 @@
         item[1]['filesystem'] == "xfs"
 
 - name: manage_lvm | resizing swap
-  shell: "swapoff -a && mkswap /dev/{{ item[0]['vgname'] }}/{{ item[1]['lvname'] }} && swapon -va"
+  shell: "swapoff -a && lvresize -L +{{ item[1]['size'] }} /dev/{{ item[0]['vgname'] }}/{{ item[1]['lvname'] }} && mkswap /dev/{{ item[0]['vgname'] }}/{{ item[1]['lvname'] }} && swapon -va"
   become: true
   with_subelements:
     - "{{ lvm_groups }}"
